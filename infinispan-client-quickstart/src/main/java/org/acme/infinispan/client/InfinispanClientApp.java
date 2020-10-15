@@ -29,5 +29,6 @@ public class InfinispanClientApp {
         RemoteCache<Object, Object> cache = cacheManager.administration().getOrCreateCache("mycache",
                 new XMLStringConfiguration(String.format(CACHE_CONFIG, "mycache")));
         cache.put("hello", "Hello World, Infinispan is up!");
+        cache.put("hola","Durgesh");
     }
 }
